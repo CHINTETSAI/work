@@ -622,3 +622,204 @@ footer a {
     animation-duration: 0.01ms !important;
   }
 }
+
+
+/* =========================
+   CV PAGE
+========================= */
+
+.cv-page {
+  background: var(--paper);
+}
+
+.cv-page .site-header {
+  background: rgba(13, 28, 23, 0.96);
+  color: var(--white);
+}
+
+.site-nav a.active::after {
+  right: 0;
+}
+
+.cv-main {
+  padding-top: var(--header-height);
+}
+
+.cv-container {
+  width: min(100% - 48px, var(--max-width));
+  margin-inline: auto;
+}
+
+.cv-hero {
+  padding: clamp(90px, 12vw, 150px) 0;
+  color: var(--white);
+
+  background:
+    linear-gradient(
+      rgba(13, 28, 23, 0.78),
+      rgba(13, 28, 23, 0.9)
+    ),
+    url("assets/hero-background.jpg") center / cover no-repeat;
+}
+
+.cv-hero h1 {
+  max-width: 800px;
+  margin: 0;
+
+  font-family: var(--serif);
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.cv-introduction {
+  max-width: 700px;
+  margin: 26px 0 0;
+
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.cv-download-button {
+  margin-top: 34px;
+  background: var(--cream);
+  color: var(--forest-950);
+}
+
+.cv-content {
+  padding: clamp(80px, 10vw, 140px) 0;
+}
+
+.cv-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: clamp(60px, 9vw, 130px);
+  align-items: start;
+}
+
+.cv-sidebar {
+  position: sticky;
+  top: calc(var(--header-height) + 40px);
+}
+
+.cv-sidebar p {
+  margin: 28px 0 6px;
+
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cv-sidebar p:first-child {
+  margin-top: 0;
+}
+
+.cv-sidebar a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.cv-sidebar a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.cv-sidebar span {
+  color: var(--muted);
+}
+
+.cv-sections {
+  min-width: 0;
+}
+
+.cv-section {
+  padding: 0 0 64px;
+  margin: 0 0 64px;
+  border-bottom: 1px solid var(--line);
+}
+
+.cv-section:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.cv-section h2 {
+  margin: 0 0 38px;
+
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.1;
+}
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 30px;
+
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+
+.cv-entry-year {
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cv-entry h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.cv-entry p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.cv-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cv-skills span {
+  padding: 9px 15px;
+
+  border: 1px solid var(--line);
+  border-radius: 999px;
+
+  background: var(--cream);
+  font-size: 0.88rem;
+}
+
+.cv-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.cv-list li {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 800px) {
+  .cv-container {
+    width: min(100% - 40px, var(--max-width));
+  }
+
+  .cv-layout {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .cv-sidebar {
+    position: static;
+  }
+
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
