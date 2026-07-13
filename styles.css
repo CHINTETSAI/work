@@ -667,7 +667,7 @@ footer a {
   margin: 0;
 
   font-family: var(--serif);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2.4rem, 8vw, 4rem);
   line-height: 1;
   letter-spacing: -0.04em;
 }
