@@ -749,7 +749,7 @@ footer a {
   margin: 0 0 38px;
 
   font-family: var(--serif);
-  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
   line-height: 1.1;
 }
 
